@@ -6,6 +6,8 @@ var person3 = {
    };
    var p = person3.print;
    console.log("p before bind : " + p());
-//    p = p.bind(person3);
+    p = p.bind(person3);
+   console.log("p after bind : " + p());
+
    console.log("p after bind : " + p.call(person3));
    

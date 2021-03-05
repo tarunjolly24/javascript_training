@@ -6,7 +6,6 @@ function Person(name,age){
     this.name=name;
     this.age=age;
     
-    
 }
 
 function Employee(name,age,empid,dept){
@@ -35,13 +34,13 @@ Developer.prototype.Display=function(){
     console.log(this.dept);
     console.log(this.desigation);
     console.log(this.project);
-    
+    return;
 };
 
 var human=new Developer("tarun",12,4369,"MEAN","software engineer","vue");
 
-console.log(human.Display())
-console.log(Developer.prototype)
+human.Display()
+// console.log(Developer.prototype)
 //extra undefined is coming
 // console.log(Developer.prototype)
 
